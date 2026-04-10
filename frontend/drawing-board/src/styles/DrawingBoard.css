@@ -1,0 +1,100 @@
+body {
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f0f2f5;
+}
+
+/* Main Container */
+
+.board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Title */
+
+.title {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Toolbar */
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  background: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+
+.toolbar button {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #007bff;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.toolbar button:hover {
+  background: #0056b3;
+}
+
+/* Tool Items */
+
+.tool-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+/* Canvas Wrapper */
+
+.canvas-wrapper {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Canvas */
+
+.canvas {
+  border: 2px solid #333;
+  border-radius: 6px;
+  background: white;
+  cursor: crosshair;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .canvas {
+    width: 100%;
+    height: auto;
+  }
+
+  .toolbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.save-load {
+  display: flex;
+  gap: 10px;
+}
