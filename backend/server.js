@@ -33,9 +33,10 @@ const draw = (e) => {
 };
 
 // Socket.IO setup
-const io = new Server(server, {
+const io = require("socket.io")(server, {
   cors: {
-    origin: "*",
+    origin: "*", // or your Vercel URL
+    methods: ["GET", "POST"],
   },
 });
 
