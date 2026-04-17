@@ -4,7 +4,7 @@ import "../styles/DrawingBoard.css";
 import { io } from "socket.io-client";
 
 // ✅ Create socket OUTSIDE component
-const socket = io("http://localhost:5000");
+const socket = io("https://your-backend-url.onrender.com");
 
 function DrawingBoard() {
   const canvasRef = useRef(null);
